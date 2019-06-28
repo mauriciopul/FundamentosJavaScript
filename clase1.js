@@ -27,5 +27,5 @@ console.log(str1)
 var str2 = nombre.substr (1,2)//el primer parametro indica donde inicia, el segundo dice cuantos caracteres muestra
 console.log(str2)
 
-
+console.log(nombre.charAt(nombre.length-1))//Muestra la última letra del string
 
