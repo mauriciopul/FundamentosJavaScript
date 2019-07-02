@@ -29,7 +29,7 @@ function imprimirSiEsMayorDeEdad(persona) {
     }
 }
 
-// imprimirSiEsMayorDeEdad(mao)
+
 
 
 
