@@ -10,7 +10,13 @@ do {
 }
 while (!llueve())
 
-console.log(`Fui a ver si llovía ${cont} veces`)
+var mostrar = ""
+if (cont > 1) {
+    mostrar = "veces"
+} else {
+    mostrar = "vez"
+}
+console.log(`Fui a ver si llovía ${cont} ${mostrar}`)
 
 
 
