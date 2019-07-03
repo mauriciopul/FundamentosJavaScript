@@ -7,16 +7,11 @@ function Persona(nom, apell, altu) {
 }
 
 Persona.prototype.soyAlto = function (persona) {
-    if (this.altura >= 1.8) {
-        console.log(`Soy alto porque mido ${this.altura}`)
-    }else{
-        console.log(`Lo siento pero soy un GNOMO y no te diré mi altura`)
-    }
+    if (this.altura >= 1.8) console.log(`Soy alto porque mido ${this.altura}`)
 }
 
 Persona.prototype.saludar = function () {
     console.log(`Hola, me llamo ${this.nombre} ${this.apellido}`)
-    this.soyAlto()
 }
 
 var mao = new Persona('Mauricio', 'Pulgarin', 1.81)
