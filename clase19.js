@@ -1,4 +1,4 @@
-//Arreglos - Array
+//Modificar array con la funcion 'map'
 
 var mao = {
     nombre: 'Mauricio',
@@ -18,7 +18,7 @@ var jose = {
 var ana = {
     nombre: 'Ana',
     apellido: 'Perez',
-    altura: 1.74
+    altura: 1.84
 }
 var leo = {
     nombre: 'Leo',
@@ -31,14 +31,23 @@ var pao = {
     altura: 1.76
 }
 
+const esAlta = persona => persona.altura >= 1.8
+const esBaja = persona => persona.altura < 1.8
+
+const modifiAltura = persona => ({
+    ...persona,
+    altura: persona.altura * 100
+})
+
 var personas = [mao, andres, jose, ana, leo, pao]
 
-for (i = 0; i < personas.length; i++) {
-    var p = personas[i]
-    console.log(`${i + 1}: ${p.nombre} mide ${p.altura}mts`)
-}
+var personasAltas = personas.filter(esAlta)
+var personasBajas = personas.filter(esBaja)
 
+var personasCms = personas.map(modifiAltura)
 
+console.log(personasCms)
+console.log(personas)
 
 
 
