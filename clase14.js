@@ -17,17 +17,16 @@ const comeMucho = () => Math.random() < 0.3
 const haceDeporte = () => Math.random() < 0.4
 
 const META = mao.peso - 3//constante que muestra 3 kilos que debe adelgazar
-
 var dias = 0
+
 while (mao.peso > META) {
-    // debugger
 
     if (comeMucho()) subirPeso(mao)
     if (haceDeporte(mao)) bajarPeso(mao)
     dias++
 }
 
-console.log(`pasaron ${dias} dias hasta que ${mao.nombre} adelgazó 3kg y quedó en ${mao.peso.toFixed(1)}kg`)
+console.log(`pasaron ${dias} dias hasta que ${mao.nombre} adelgazó 3kg`)
 
 
 
