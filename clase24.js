@@ -33,10 +33,6 @@ Desarrollador.prototype.saludar = function () {
     console.log(`Hola, me llamo ${this.nombre} ${this.apellido} y soy Desarrollador/a`)
 }
 
-
-
-
-
 // var mao = new Persona('Mauricio', 'Pulgarin', 1.81)
 // var luisa = new Persona('Luisa', 'Giraldo', 1.75)
 // var gloria = new Persona('Gloria', 'Araque', 1.87)
